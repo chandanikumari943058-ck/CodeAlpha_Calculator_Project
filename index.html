@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="top">
+            <span>Calculator</span>
+            <button id="themeBtn">☀</button>
+        </div>
+
+        <div class="display">
+            <div id="history"></div>
+            <div id="display">0</div>
+        </div>
+
+        <div class="buttons">
+
+            <button class="function" onclick="clearAll()">AC</button>
+            <button class="function" onclick="clearEntry()">CE</button>
+            <button class="function" onclick="toggleSign()">±</button>
+            <button class="function" onclick="percent()">%</button>
+
+            <button class="function" onclick="sqrtValue()">√</button>
+            <button class="function" onclick="squareValue()">x²</button>
+            <button class="function" onclick="reciprocal()">1/x</button>
+            <button class="operator" onclick="add('/')">÷</button>
+
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button class="operator" onclick="add('*')">×</button>
+
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button class="operator" onclick="add('-')">−</button>
+
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button class="operator" onclick="add('+')">+</button>
+
+            <button class="zero" onclick="add('0')">0</button>
+            <button onclick="add('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
